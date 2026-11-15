@@ -29,7 +29,7 @@ dependencies = []
 
 [project.optional-dependencies]
 http = ["fastapi>=0.110", "uvicorn>=0.27"]
-drift = ["vorlabs-drift>=0.4.0"]
+drift = ["vorlabs-drift @ git+https://github.com/becksanswerr/drift.git"]
 dev = ["pytest>=7.0", "ruff>=0.4"]
 
 [project.urls]

@@ -36,14 +36,14 @@ Neither library depends on the other.
 ## 02 / Installation
 
 ```bash
-pip install vorlabs-anchor
+pip install git+https://github.com/becksanswerr/anchor.git
 ```
 
 Optional extras:
 
 ```bash
-pip install "vorlabs-anchor[http]"   # FastAPI / uvicorn adapter (anchor.http)
-pip install "vorlabs-anchor[drift]"  # Multi-machine routing example with vorlabs-drift
+pip install "vorlabs-anchor[http] @ git+https://github.com/becksanswerr/anchor.git"   # FastAPI / uvicorn adapter (anchor.http)
+pip install "vorlabs-anchor[drift] @ git+https://github.com/becksanswerr/anchor.git"  # Multi-machine routing example with vorlabs-drift
 ```
 
 ---

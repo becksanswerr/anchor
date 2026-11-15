@@ -5,7 +5,7 @@ drift Node, which runs a reverse auction across every machine in the mesh (this 
 executes the job on the winner. Start this script on a second machine on the same LAN/Tailscale
 network and the auction will choose between them.
 
-    pip install "vorlabs-anchor[drift]"
+    pip install "vorlabs-anchor[drift] @ git+https://github.com/becksanswerr/anchor.git"
     python examples/03_with_drift.py
 """
 
@@ -16,7 +16,7 @@ def main() -> None:
     try:
         from drift import Node
     except ImportError:
-        print("vorlabs-drift is not installed. Install with: pip install vorlabs-anchor[drift]")
+        print("vorlabs-drift is not installed. Install with: pip install "vorlabs-anchor[drift] @ git+https://github.com/becksanswerr/anchor.git"")
         sys.exit(0)
 
     from anchor import BoardStore, Dispatcher, RouteRule, hand_off

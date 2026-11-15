@@ -1,0 +1,11 @@
+
+[dev]
+pytest>=7.0
+ruff>=0.4
+
+[drift]
+vorlabs-drift>=0.4.0
+
+[http]
+fastapi>=0.110
+uvicorn>=0.27
